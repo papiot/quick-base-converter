@@ -1,0 +1,86 @@
+Quick Base Converter v1.0
+Author: Catalin Avram
+email: catalin_avram@hotmail.com
+
+COMPILATION:
+---------------------------------
+At the command prompt, type:
+
+cc -o qbc qbc.c
+
+RUNNING:
+---------------------------------
+At the command prompt, type:
+
+./qbc [input_base] [output_base]
+
+USAGE:
+---------------------------------
+
+QUICK REFERENCE:
+----------------
+If you want to convert the number 101001 from binary to decimal, do the following:
+
+./qbc 2 10
+101001=
+^^^^^^^
+101001=41
+
+Where the underlined text represents input.
+Here are some sample runs:
+(the underline strings are inputs)
+
+./qbc 2 10
+10010101011=
+^^^^^^^^^^^^
+10010101011=1195
+11010, 101 +=
+^^^^^^^^^^^^^
+11010,101+=31
+
+
+./qbc 10 16
+234 =
+^^^^^
+234=EA
+34532, 323 -=
+^^^^^^^^^^^^^
+34532,323-=85A1
+
+
+./qbc R U
+CONFUSED=
+^^^^^^^^^
+55F6KI6=2N01RFF
+
+VERY, CONFUSED x=
+^^^^^^^^^^^^^^^^^
+14F17,55F6KI6x=243463C
+
+
+
+./qbc 3 9
+2ABC, 23 -= 23A, 34 += ASDF=
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+21000,100-=220
+1101,111+=55
+210100=710
+
+
+As you can see from these sample runs, a case ends when the return button is hit, and there's already an '=' sign inputed.  White spaces, tabs, and newline characters are ingnored (except for a newline right after the '=' sign, which signals end of input).
+
+The program is terminated when EOF is inputed (ctrl + d).
+
+USER GUIDE:
+------------------------------
+
+Accepted bases: 0-9A-Z (case sensitive)
+Accepted digits: 0-9A-Z
+
+Operations: 
++  <-- adding
+-  <-- substracting
+/  <-- division
+x  <-- multiplication            
+
+
